@@ -10,6 +10,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{31069B
 		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lette.ProjectEuler.Core.XUnit", "Lette.ProjectEuler.Core.XUnit\Lette.ProjectEuler.Core.XUnit.csproj", "{547029D4-3870-444B-9CA1-2A03E6A3AF17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B62D5519-CE6B-4D57-A767-AC2517157814}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +39,16 @@ Global
 		{DB9F8733-B583-490C-BF1F-25E64DE9C024}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{DB9F8733-B583-490C-BF1F-25E64DE9C024}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DB9F8733-B583-490C-BF1F-25E64DE9C024}.Release|x86.ActiveCfg = Release|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{547029D4-3870-444B-9CA1-2A03E6A3AF17}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
