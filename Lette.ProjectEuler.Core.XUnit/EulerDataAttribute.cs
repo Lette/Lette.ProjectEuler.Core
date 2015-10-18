@@ -7,10 +7,17 @@ namespace Lette.ProjectEuler.Core.XUnit
 {
     public class EulerDataAttribute : DataAttribute
     {
+        private readonly string _assemblyPath;
+
+        public EulerDataAttribute(string assemblyPath)
+        {
+            _assemblyPath = assemblyPath;
+        }
+
         public override IEnumerable<object[]> GetData(MethodInfo methodUnderTest)
         {
             var builder = new ProblemSuiteBuilder();
-            var suite = builder.CreateFromAssembly("Lette.ProjectEuler.Solutions.Demo.dll");
+            var suite = builder.CreateFromAssembly(_assemblyPath);
 
             foreach (var problem in suite)
             {
