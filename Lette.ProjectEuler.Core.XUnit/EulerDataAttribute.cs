@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Reflection;
 using Lette.ProjectEuler.Core.Runner;
-using Xunit.Extensions;
 using Xunit.Sdk;
 
 namespace Lette.ProjectEuler.Core.XUnit
