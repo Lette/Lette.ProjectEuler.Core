@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Reflection;
 using Lette.ProjectEuler.Core.Runner;
 using Xunit.Extensions;
+using Xunit.Sdk;
 
 namespace Lette.ProjectEuler.Core.XUnit
 {
     public class EulerDataAttribute : DataAttribute
     {
-        public override IEnumerable<object[]> GetData(MethodInfo methodUnderTest, Type[] parameterTypes)
+        public override IEnumerable<object[]> GetData(MethodInfo methodUnderTest)
         {
             var builder = new ProblemSuiteBuilder();
             var suite = builder.CreateFromAssembly("Lette.ProjectEuler.Solutions.Demo.dll");
