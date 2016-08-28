@@ -13,11 +13,17 @@ namespace Lette.ProjectEuler.Core.Runner
                 .GetTypes()
                 .Where(t => t.IsDefined(typeof(EulerAttribute), false))
                 .Where(t => t.GetInterfaces().Contains(typeof(IProblem)))
-                .Select(t => (IProblem)t.GetConstructor(Type.EmptyTypes).Invoke(null))
+                .Where(t => GetDefaultConstructor(t) != null)
+                .Select(t => (IProblem) GetDefaultConstructor(t).Invoke(null))
                 .OrderBy(p => p.GetMetaData().Number)
                 .ToList();
 
             return new List<IProblem>(problems).AsReadOnly();
+        }
+
+        private static ConstructorInfo GetDefaultConstructor(Type t)
+        {
+            return t.GetConstructor(Type.EmptyTypes);
         }
     }
 }

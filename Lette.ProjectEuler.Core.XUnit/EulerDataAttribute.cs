@@ -23,7 +23,7 @@ namespace Lette.ProjectEuler.Core.XUnit
             {
                 problem.Prepare();
                 var metadata = problem.GetMetaData();
-                yield return new object[] { string.Format("{0,4}", metadata.Number), metadata.Description, metadata.Answer, problem.Solve() };
+                yield return new object[] {$"{metadata.Number,4}", metadata.Description, metadata.Answer, problem.Solve() };
             }
         }
     }

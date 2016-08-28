@@ -17,24 +17,12 @@ namespace Lette.ProjectEuler.Core
             return SolutionResult.Create(this);
         }
 
-        public bool IsFaulted
-        {
-            get { return GetStatus() == SolutionResult.Faulted; }
-        }
+        public bool IsFaulted => GetStatus() == SolutionResult.Faulted;
 
-        public bool IsCorrect
-        {
-            get { return GetStatus() == SolutionResult.Pass; }
-        }
+        public bool IsCorrect => GetStatus() == SolutionResult.Pass;
 
-        public bool IsWrong
-        {
-            get { return GetStatus() == SolutionResult.Fail; }
-        }
+        public bool IsWrong => GetStatus() == SolutionResult.Fail;
 
-        public bool IsInconclusive
-        {
-            get { return GetStatus() == SolutionResult.Inconclusive; }
-        }
+        public bool IsInconclusive => GetStatus() == SolutionResult.Inconclusive;
     }
 }
